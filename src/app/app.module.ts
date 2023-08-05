@@ -3,42 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SurveySiteModule } from './survey-site/survey-site.module';
-import { SurveysModule } from './surveys/surveys.module';
-import { HomeComponent } from './pages/home/home.component';
-import { ErrorComponent } from './pages/error/error.component';
-import { CreateComponent } from './pages/surveys/create/create.component';
-import { EditComponent } from './pages/surveys/edit/edit.component';
-import { LandingComponent } from './pages/surveys/landing/landing.component';
-import { MysurveysComponent } from './pages/surveys/mysurveys/mysurveys.component';
-import { ReportComponent } from './pages/surveys/report/report.component';
-import { LoginComponent } from './pages/auth/login/login.component';
-import { RegisterComponent } from './pages/auth/register/register.component';
-import { PartialsModule } from './partials/partials.module';
-// import { SurveySiteComponent } from './survey-site/survey-site.component';
+import {SurveySiteModule} from './survey-site/survey-site.module';
+import { PagesModule } from './pages/pages.module';
+import { RestDataSource } from './model/rest.datasource';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    ErrorComponent,
-    CreateComponent,
-    EditComponent,
-    LandingComponent,
-    MysurveysComponent,
-    ReportComponent,
-    LoginComponent,
-    RegisterComponent,
+    // PagesModule,
+    // PartialsModule
     // SurveySiteComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SurveySiteModule,
-    SurveysModule,
-    PartialsModule
+    PagesModule
   ],
-  providers: [],
+  providers: [RestDataSource],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

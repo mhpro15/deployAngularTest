@@ -1,12 +1,12 @@
-export class Response {
+ export class Response {
     constructor(
-        public _id?:number,
-        public surveyId?:number,
-        public respondentId?:number,
+        public _id?:string,
+        public surveyId?:string,
+        public respondentId?:string,
         public takenBy?:string,
         public datetaken?:Date,
-        public question?:Array<string>,
-        public response?:Array<string>,
+        public questions?:Array<string>,
+        public responses?:Array<string>,
         ){}
-    
-}
+        
+    }
