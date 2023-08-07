@@ -1,5 +1,5 @@
 // Base URL for your server
-export const API_BASE_URL = 'http://localhost:5000/testdeploy-af78e/us-central1/app';
+export const API_BASE_URL = 'http://localhost:3000';
 // Define the API endpoints as constants
 export const API_ENDPOINTS = {
   HOME_PAGE: '/',
