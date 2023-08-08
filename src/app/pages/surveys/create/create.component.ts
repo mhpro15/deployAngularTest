@@ -82,7 +82,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class CreateComponent implements OnInit {
   mcqContainerDisplay = 'none';
   saContainerDisplay = 'none';
-  @ViewChild ('surveyType') surveyType: ElementRef;
+  @ViewChild('surveyType') surveyType: ElementRef;
+  user: any;
 
   constructor(private router: Router, private http: HttpClient) { }
   onSurveyTypeChange(surveyType: string) {
@@ -155,6 +156,8 @@ export class CreateComponent implements OnInit {
     this.router.navigate(['/']);
   }
   ngOnInit(): void {
+    this.user = JSON.parse(localStorage.getItem('user'));
+    
   }
 
 }
