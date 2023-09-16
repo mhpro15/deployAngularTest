@@ -1,5 +1,5 @@
 // Base URL for your server
-export const API_BASE_URL = 'https://survey-server-4f003d180544.herokuapp.com';
+export const API_BASE_URL = 'gloriouswearablealphatest.vulcansuna.repl.co';
 // Define the API endpoints as constants
 export const API_ENDPOINTS = {
   HOME_PAGE: '/',
